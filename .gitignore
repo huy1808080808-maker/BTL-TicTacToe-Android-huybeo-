@@ -1,0 +1,44 @@
+*.iml
+.gradle/
+/local.properties
+local.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetSelector.xml
+.idea/deviceManager.xml
+.idea/appInsightsSettings.xml
+.idea/planningMode.xml
+.idea/.name
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Build directories
+/build/
+build/
+app/build/
+/*/build/
+
+# External native build folder
+.externalNativeBuild
+.cxx/
+
+# Log and temp files
+*.log
+captures/
+.navigation/
+
+# OS files
+.DS_Store
+Thumbs.db
