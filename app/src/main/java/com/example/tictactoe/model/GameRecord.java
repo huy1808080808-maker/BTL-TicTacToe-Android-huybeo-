@@ -3,13 +3,14 @@ package com.example.tictactoe.model;
 public class GameRecord {
     private int id;
     private int userId;
-    private String opponent;      // "AI" hoặc tên người chơi 2
-    private String gameMode;      // "AI" hoặc "PVP"
-    private String result;        // "WIN", "LOSE", "DRAW"
+    private String opponent; // "AI" hoặc tên người chơi 2
+    private String gameMode; // "AI" hoặc "PVP"
+    private String result; // "WIN", "LOSE", "DRAW"
     private int movesCount;
     private String playedAt;
 
-    public GameRecord() {}
+    public GameRecord() {
+    }
 
     public GameRecord(int userId, String opponent, String gameMode, String result, int movesCount, String playedAt) {
         this.userId = userId;
@@ -21,24 +22,62 @@ public class GameRecord {
     }
 
     // Getters & Setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    public int getId() {
+        return id;
+    }
 
-    public int getUserId() { return userId; }
-    public void setUserId(int userId) { this.userId = userId; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public String getOpponent() { return opponent; }
-    public void setOpponent(String opponent) { this.opponent = opponent; }
+    public int getUserId() {
+        return userId;
+    }
 
-    public String getGameMode() { return gameMode; }
-    public void setGameMode(String gameMode) { this.gameMode = gameMode; }
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
-    public String getResult() { return result; }
-    public void setResult(String result) { this.result = result; }
+    // tên đối thủ
+    public String getOpponent() {
+        return opponent;
+    }
 
-    public int getMovesCount() { return movesCount; }
-    public void setMovesCount(int movesCount) { this.movesCount = movesCount; }
+    public void setOpponent(String opponent) {
+        this.opponent = opponent;
+    }
 
-    public String getPlayedAt() { return playedAt; }
-    public void setPlayedAt(String playedAt) { this.playedAt = playedAt; }
+    public String getGameMode() {
+        return gameMode;
+    }
+
+    public void setGameMode(String gameMode) {
+        this.gameMode = gameMode;
+    }
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
+    // tổng số nước cờ đi
+    public int getMovesCount() {
+        return movesCount;
+    }
+
+    public void setMovesCount(int movesCount) {
+        this.movesCount = movesCount;
+    }
+
+    // ngày giờ
+    public String getPlayedAt() {
+        return playedAt;
+    }
+
+    public void setPlayedAt(String playedAt) {
+        this.playedAt = playedAt;
+    }
 }
